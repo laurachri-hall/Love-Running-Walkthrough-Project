@@ -18,6 +18,15 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
+}
+
 /* Header */
 header {
   background-color: #fff;
@@ -34,13 +43,6 @@ header {
 header a {
   text-decoration: none;
   color: inherit;
-}
-
-h1 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #252525;
 }
 
 #menu {
@@ -72,7 +74,7 @@ nav {
 
 /* Nav Toggle */
 
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
 }
 
@@ -95,26 +97,42 @@ main {
 /* Hero section*/
 
 #hero {
-  height:600px;
-  width:100%;
+  height: 600px;
+  width: 100%;
   background: url(../images/hero-image.webp) no-repeat center center/cover;
+  position: relative;
 }
 
+#cover-text {
+  /* Final rgp value sets the opacity so it is semi-transparent */
+  background-color: rgba(241, 109, 107, .7);
+  font-size: 130%;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+  color:#fff;
+}
 
 /* Footer */
 
 #social-networks {
-  text-align:center;
-  padding:20px 0;
+  text-align: center;
+  padding: 20px 0;
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
 }
 
 #social-networks i {
-  font-size:160%;
+  font-size: 160%;
   padding: 5%;
-  color:#3a3a3a;
+  color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -139,7 +157,7 @@ main {
   }
 
   .nav-toggle-label {
-    display:none;
+    display: none;
   }
 
   #logo {
@@ -154,6 +172,15 @@ main {
     /* Push main content down to accommodate larger header */
     margin-top: 79px;
   }
+
+
+/* Hero */
+
+#cover-text {
+  width:300px;
+  right:50px;
+}
+
 }
 
 /* Media query: laptops and larger (992px and up) */
@@ -162,5 +189,4 @@ main {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
   }
-
 }
