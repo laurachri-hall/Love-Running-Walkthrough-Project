@@ -166,6 +166,32 @@ main {
   justify-content: center;
 }
 
+/* Meet-up Times Section */
+
+#times {
+  background: url(../images/dublin-city.webp) no-repeat center/cover;
+  /* Handles responsibity without the need for a media query */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times div {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align:center;
+  /* This will not wrap on screens of less than 400px wide. 
+  Each div will expand to fill the available space on its row. */
+  flex-basis: 200px;
+  flex-grow: 1;
+  /* Creates a grid of meet up time divs over the background image */
+  border:2px solid white;
+}
+
+#times h3 {
+  color:#fafafa
+}
+
 /* Footer */
 
 #social-networks {
@@ -228,23 +254,23 @@ main {
   }
 }
 
- /* Reasons Section */
-  #benefits-physical,
-  #benefits-mental {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+/* Reasons Section */
+#benefits-physical,
+#benefits-mental {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-  #benefits-physical > div,
-  #benefits-mental > div {
+#benefits-physical > div,
+#benefits-mental > div {
   width: 75%;
-  }
+}
 
-  #benefits-mental > div {
-    text-align: end;
-    align-self: flex-end;
-  }
+#benefits-mental > div {
+  text-align: end;
+  align-self: flex-end;
+}
 
 /* Media query: laptops and larger (992px and up) */
 
