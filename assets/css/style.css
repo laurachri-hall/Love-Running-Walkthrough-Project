@@ -150,21 +150,20 @@ main {
 /* Reasons Circle Image */
 
 #circle-cover-bg {
-  background: url(../images/reasons-image.webp) no-repeat top center /cover;
-  height:90vw;
-  width:90vw;
-  margin-bottom:20px;
+  background: url(../images/reasons-image.webp) no-repeat top center/cover;
+  height: 90vw;
+  width: 90vw;
+  margin-bottom: 20px;
   /* Makes the square into a circle */
-  border-radius:50%;
-  max-width:300px;
-  max-height:300px;
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 #benefits-image {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 /* Footer */
@@ -228,6 +227,24 @@ main {
     right: 50px;
   }
 }
+
+ /* Reasons Section */
+  #benefits-physical,
+  #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #benefits-physical > div,
+  #benefits-mental > div {
+  width: 75%;
+  }
+
+  #benefits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+  }
 
 /* Media query: laptops and larger (992px and up) */
 
