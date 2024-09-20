@@ -154,7 +154,7 @@ main {
 /* Reasons Circle Image */
 
 #circle-cover-bg {
-  background: url(../images/reasons-image.webp) no-repeat top center/cover;
+  background: url("../images/reasons-image.webp") no-repeat top center/cover;
   height: 90vw;
   width: 90vw;
   margin-bottom: 20px;
@@ -173,7 +173,7 @@ main {
 /* Meet-up Times Section */
 
 #times {
-  background: url(../images/dublin-city.webp) no-repeat center/cover;
+  background: url("../images/dublin-city.webp") no-repeat center/cover;
   /* Handles responsivity without the need for a media query */
   display: flex;
   flex-wrap: wrap;
@@ -222,6 +222,17 @@ main {
   font-size: 160%;
   padding: 5%;
   color: #3a3a3a;
+}
+
+/* Media query: large or landscape phones (576px and up) */
+
+@media screen and (min-width: 576px) {
+
+  #photos {
+    column-count: 2;
+    column-gap:0;
+  }
+  
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -288,6 +299,12 @@ main {
   align-self: flex-end;
 }
 
+/* Gallery */
+
+#photos {
+  column-count:3;
+}
+
 /* Media query: laptops and larger (992px and up) */
 
 @media screen and (min-width: 992px) {
@@ -296,30 +313,36 @@ main {
   }
 }
 
-@media screen and (min-width: 1200px) {
+/* Gallery */
+
+#photos {
+  column-count:4;
+}
+
+@media screen and (min-width: 1200px) {    
   /* Reasons section */
   #benefits {
-    display: flex;
-    flex-direction: row;
+      display: flex;
+      flex-direction: row;
   }
 
   #benefits > div {
-    flex: 1;
+      flex: 1;
   }
 
   #benefits-image {
-    order: 0;
+      order: 0
   }
 
   #benefits-mental {
-    order: 1;
+      order: 1;
   }
 
   #benefits-mental > div {
-    align-self: flex-end;
+      align-self: flex-start;
   }
 
   #benefits-physical > div {
-    align-self: flex-start;
+      align-self: flex-end;
   }
 }
