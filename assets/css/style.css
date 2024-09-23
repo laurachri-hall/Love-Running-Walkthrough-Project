@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid blue;
 }
 
 /* General Styles */
@@ -381,17 +382,18 @@ main {
     border-bottom: 1px solid #3a3a3a;
   }
 
-/* Gallery */
+  /* Gallery */
 
 #photos {
   column-count: 4;
+}
 }
 
 @media screen and (min-width: 1200px) {
   /* Reasons section */
   #benefits {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
   }
 
   #benefits > div {
@@ -413,5 +415,5 @@ main {
   #benefits-physical > div {
     align-self: flex-end;
   }
-}
+
 }
